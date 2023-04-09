@@ -47,6 +47,7 @@ purchase_details = {
 
 # Function to display the main menu to choose from the below options to perform necessary actions.
 def menu():
+    print("####################################################################")
     print("""You can choose from the following option\n
             1:Purchase a ticket
             2:Add new movies
@@ -311,12 +312,15 @@ def customer_information():
 
 
 # Displaying the movie information
+# Reference: [#] KaranGupta5 (01/08/2022) Python program to print the dictionary in table format (1.0.0) [code]. https://www.geeksforgeeks.org/python-program-to-print-the-dictionary-in-table-format/
 def movie_information():
-    print(available_movies)
+    print("{:<10} {:<10}".format("Movie Name", "Ticket Available"))
+    for movie in available_movies:
+        print("{:<10} {:<10}".format(movie, available_movies[movie]))
 
 
 # To display all movie records
-# Reference: https://www.geeksforgeeks.org/python-program-to-print-the-dictionary-in-table-format/
+# Reference: [#] KaranGupta5 (01/08/2022) Python program to print the dictionary in table format (1.0.0) [code]. https://www.geeksforgeeks.org/python-program-to-print-the-dictionary-in-table-format/
 def display_all_movie_records():
     print("{:<10} {:<10} {:<10} {:<10} {:<10} {:<10} {:<10}".format(
         '', 'adult', 'child', 'senior', 'student', 'concession', 'Revenue'))
@@ -329,7 +333,6 @@ def display_all_movie_records():
 # Program main function
 if __name__ == "__main__":
     print("welcome to RMIT Ticketing sysytem!")
-    print("######################################################################")
 
     while True:
         operation = menu()
