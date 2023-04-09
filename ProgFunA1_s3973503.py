@@ -1,6 +1,6 @@
 ''' Name :Prathiksha Chamarajanagar Padmaprasad
     student id:3973503
-    The highest pasrt you have attempted:3
+    The highest part you have attempted:3
     No problem with the code
     Global lists {Declaring all the lists globally because we need to use them for one or more function}
     creating a dictionary to store the movie input given by the user becuase we 
